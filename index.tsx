@@ -138,8 +138,10 @@ export default class OTPInputView extends Component<InputProps, OTPInputViewStat
         let result = newdigits.join("")
         if (result.length >= pinCount) {
             onCodeFilled && onCodeFilled(result)
-            this.focusField(pinCount - 1)
-            this.blurAllFields()
+			this.focusField(pinCount - 1)
+			if (this.props.dontDismissKebyoardOnCodeFilled) {
+				this.blurAllFields();
+			}
         } else {
             if (text.length > 0 && index < pinCount - 1) {
                 this.focusField(index + 1)

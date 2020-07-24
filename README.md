@@ -97,6 +97,7 @@ const styles = StyleSheet.create({
 | clearInputs             | NO       | Clear inputs after entering code                                                                |
 | placeholderCharacter    | NO       | The character/string that will be used as placeholder in the individual code input fields       |
 | placeholderTextColor    | NO       | Color of the placeholderCharacter                                                               |
+| dontDismissKebyoardOnCodeFilled    | NO       | Don't dismiss the keyboard on code filled. Default is false.                                                               |
 
 ## Notes
 
